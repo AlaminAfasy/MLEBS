@@ -44,7 +44,7 @@
 
 
                     You are logged in!
-                    <table class="table table-bordered">
+                    <table class="table ">
                       <thead>
                         <tr>
                           <th scope="col">SL</th>
@@ -73,7 +73,7 @@
                             @if($user->status!="valid")
                             <a href="{{ route('valid', $user->id) }}" class="btn btn-success">Valid</a>
                             @else
-                            <a href="{{ route('invalid', $user->id) }}" class="btn btn-dark">Invalid</a>
+                            <a href="{{ route('invalid', $user->id) }}" class="btn btn-success">Invalid</a>
                             @endif
                           </td>
                           <td>

@@ -16,7 +16,7 @@ class StudentController extends Controller
     {
         //
         $students=Student::all();
-        return view('index')->with('students',$students);
+        return view('StudentsControlPanel')->with('students',$students);
     }
 
     /**

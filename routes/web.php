@@ -28,3 +28,8 @@ Route::post('/delete/{id}', 'StudentController@delete')->name('delete');
 Route::get('/invalid/{id}', 'UserController@invalid')->name('invalid');
 Route::get('/valid/{id}', 'UserController@valid')->name('valid');
 Route::post('/delete/{id}', 'UserController@delete')->name('delete');
+
+Route::get('/teacher', 'TeacherController@index')->name('teacher');
+
+
+Route::get('/equipment', 'EquipmentController@index')->name('equipment');
