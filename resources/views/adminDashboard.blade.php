@@ -32,7 +32,7 @@
 
 <div class="container bg-info">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-10">
             <div class="card">
                 <div class="card-header bg-success">Dashboard</div>
                 <div class="card-body ">
@@ -48,8 +48,10 @@
                       <thead>
                         <tr>
                           <th scope="col">SL</th>
+                          <th scope="col">Face</th>
                           <th scope="col">Name</th>
                           <th scope="col">Email</th>
+                          <th scope="col">Gender</th>
                           <th scope="col">Role</th>
                           <th scope="col">Status</th>
                           <th scope="col" colspan="2"><center>Actions</center></th>
@@ -65,8 +67,14 @@
 
                         <tr>
                           <td>{{$sl}}</td>
+                          <td>
+
+                              <img src="{{ Storage::url($user->photo) }}" alt="" width="50px" height="50px">
+
+                          </td>
                           <td>{{$user->name}}</td>
                           <td>{{$user->email}}</td>
+                          <td>{{$user->gender}}</td>
                           <td>{{$user->role}}</td>
                           <td>{{$user->status}}</td>
                           <td>

@@ -14,6 +14,8 @@ class EquipmentController extends Controller
      */
     public function index()
     {
+        $equipments=Equipment::all();
+        return view('EquipmentsControlPanel')->with('equipments',$equipments);
         return view('EquipmentsControlPanel');
     }
 

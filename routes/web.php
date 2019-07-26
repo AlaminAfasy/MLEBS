@@ -28,6 +28,7 @@ Route::post('/delete/{id}', 'StudentController@delete')->name('delete');
 Route::get('/invalid/{id}', 'UserController@invalid')->name('invalid');
 Route::get('/valid/{id}', 'UserController@valid')->name('valid');
 Route::post('/delete/{id}', 'UserController@delete')->name('delete');
+Route::post('/set_role/{id}', 'UserController@set_role')->name('set_role');
 
 Route::get('/teacher', 'TeacherController@index')->name('teacher');
 

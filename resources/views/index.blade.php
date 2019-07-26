@@ -2,11 +2,12 @@
 @section('title')
 Student |View
 @endsection
+
 @section('content')
 <div class="row justify-content-center">
     <div class="col-md-12">
         <div class="card">
-            <div class="card-header bg-success">Student's List</div>
+            <div class="card-header bg-success">Student's Li st</div>
 
             <div class="card-body">
                 @if (session('status'))

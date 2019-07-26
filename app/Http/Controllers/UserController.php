@@ -28,4 +28,18 @@ class UserController extends Controller
       $user->save();
       return redirect()->route('adminDashboard');
     }
+
+    public function set_role(Request $request, $id)
+    {
+      $user=User::find($id);
+      $user->role=$request->role;
+      $user->gender=$request->gender;
+      if ($request->hasFile('photo')) {
+          //store
+          $user->photo = $request->photo->store('public/images');
+      }
+
+      $user->save();
+      return redirect()->route('home');
+    }
 }

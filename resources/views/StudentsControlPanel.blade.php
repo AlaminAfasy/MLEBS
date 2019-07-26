@@ -18,6 +18,9 @@ Student |View
 <li class="nav-item active">
   <a class="nav-link" href="{{ url('/equipment')}}">Equipment <span class="sr-only">(current)</span></a>
 </li>
+<li class="nav-item">
+  <a class="nav-link text-info font-weight-bold" href="{{ url('/create')}}">Create New Student</a>
+</li>
 @endif
 
 @if(Auth::user()->role=="student"&&Auth::user()->status=="valid")
